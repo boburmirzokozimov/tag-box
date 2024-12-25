@@ -1,5 +1,5 @@
 <?php
 
-use App\User\Presentation\HTTP\UserController;
+use App\Core\Presentation\HTTP\Controllers\UserController;
 
 Route::get('/users', [UserController::class, 'index']);

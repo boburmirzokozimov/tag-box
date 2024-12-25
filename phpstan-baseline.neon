@@ -1,0 +1,31 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method App\\Core\\Application\\Command\\StoreUser\\StoreUserCommand\:\:fromRequest\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Core/Application/Command/StoreUser/StoreUserCommand.php
+
+		-
+			message: '#^Method App\\Core\\Domain\\User\\UserId\:\:jsonSerialize\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Core/Domain/User/UserId.php
+
+		-
+			message: '#^PHPDoc type array\<int, string\> of property App\\Core\\Infrastructure\\EloquentModels\\UserEloquentModel\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Core/Infrastructure/EloquentModels/UserEloquentModel.php
+
+		-
+			message: '#^Property App\\Core\\Infrastructure\\EloquentModels\\UserEloquentModel\:\:\$rules type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Core/Infrastructure/EloquentModels/UserEloquentModel.php
+
+		-
+			message: '#^Method App\\Core\\Presentation\\HTTP\\Requests\\StoreUserRequest\:\:rules\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Core/Presentation/HTTP/Requests/StoreUserRequest.php
