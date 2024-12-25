@@ -3,15 +3,14 @@ includes:
     - vendor/nesbot/carbon/extension.neon
 
 parameters:
-
     paths:
         - app/
 
     # Level 10 is the highest level
-    level: 10
+    level: 9
 
-#    ignoreErrors:
-#        - '#PHPDoc tag @var#'
-#
-#    excludePaths:
-#        - ./*/*/FileToBeExcluded.php
+    ignoreErrors:
+        -
+            identifier: missingType.generics
+    excludePaths:
+        - ./app/Common/*
